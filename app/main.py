@@ -22,12 +22,13 @@ def battle(knights: dict) -> dict:
 
     # -------------------------------------------------------------------------------
     # BATTLE:
+    epic_battle = Battle()
 
     # 1 Lancelot vs Mordred:
-    Battle.hold_duel(lancelot, mordred)
+    epic_battle.hold_duel(lancelot, mordred)
 
     # 2 Arthur vs Red Knight:
-    Battle.hold_duel(arthur, red_knight)
+    epic_battle.hold_duel(arthur, red_knight)
 
     # Return battle results:
-    return Battle.get_battle_results()
+    return epic_battle.get_battle_results()
