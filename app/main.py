@@ -1,6 +1,5 @@
-from app.knightProvider import get_knights_for_battle
-from app.knight import Knight
 from app.battle import Battle
+from app.knight import Knight
 
 
 def battle(knights: dict) -> dict:
@@ -32,6 +31,3 @@ def battle(knights: dict) -> dict:
 
     # Return battle results:
     return Battle.get_battle_results()
-
-
-print(battle(get_knights_for_battle()))
